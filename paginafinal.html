@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pagina final HTML5,CSS3</title>
+<style type="text/css">
+	body {margin:0px;
+	padding:0px;}
+	#contenedor{width:960px;
+	border:1px solid black;
+	margin:15px auto;}
+	header { width:800px;	border:1px solid #999999;
+ margin:50px auto;
+ text-align:center;
+ background:linear-gradient(#FFFFFF 0% #006699 60%);
+ border-radius:8px;
+ transition:transform 1s;
+		}
+		header:hover {transform:translateX(90deg)}
+			@font-face {font-family:'MiNuevaFuente';
+	src:url('handsean.ttf');}
+	header #tituloweb {color:white;
+	font-weight:bold;
+	font-size:30px;
+	 font-family:MiNuevaFuente;}
+	 nav { background-color:#cccccc;
+	 padding:0px 15px;}
+	 nav ul li { list-style-type:none;
+	 display:inline-block;
+	 font-family:Verdana, Geneva, sans-serif;
+	 font-weight:bold;
+	 font-size:16px;}
+	 nav ul li a { display:block;
+		 text-decoration:none;
+		 width:150px;
+		 padding:5px;
+		 color:white;}
+	nav ul li a:hover {background-color:#900; }
+	section {float:left;
+	width:660px;
+	margin:20px;}
+	article {background-color:#FFFFCC;
+	border:1px solid #999999;
+	padding:20px;
+	margin-bottom:20px;}
+	article footer{text-align:right;}
+	aside {float:left;
+	width:220px;}
+	footer {clear:both;
+	text-align:center;
+	padding:20px;
+	}
+</style>
+</head>
+
+<body>
+<div id="contenedor">
+	<header>
+    	<h1 id="tituloweb">Este es el titulo del sitio web</h1>
+    </header>
+    <nav>
+    	<ul>
+        	<li><a href="#">Home</a></li>
+            <li><a href="#">Catalogo</a></li>
+            <li><a href="#">Buscador</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <section>
+    	<article id="articulo1">
+        	<h2> Articulo 1</h2>
+            <h2> Subtitulo del articulo1</h2>
+            <time datetime="2016-10-27">Publicado el 27 de Octubre de 2016 </time>
+            <figure>
+            	<img src="foto-articulo1.png">
+                <figcaption> Esta es la imagen del articulo</figcaption>
+            </figure>
+            <p>Lorem ipsum dolor sit amet, id turpis mattis habitasse vehicula lectus, lacus a vestibulum vitae, pellentesque mauris in ipsum volutpat, duis rutrum, pulvinar in risus suspendisse tincidunt elit. Lacus in suscipit risus, risus ac, nam suspendisse sodales.</p>
+            <footer>Pie del articulo</footer>
+        </article>
+         <article id="articulo2">
+                 	<h2> Articulo 1</h2>
+            <h2> Subtitulo del articulo1</h2>
+            <time datetime="2016-10-27">Publicado el 27 de Octubre de 2016 </time>
+            <p>Lorem ipsum dolor sit amet, id turpis mattis habitasse vehicula lectus, lacus a vestibulum vitae, pellentesque mauris in ipsum volutpat, duis rutrum, pulvinar in risus suspendisse tincidunt elit. Lacus in suscipit risus, risus ac, nam suspendisse sodales.</p>
+            <footer>Pie del articulo</footer>
+        </article>
+    </section>
+    <aside>
+    	Texto Texto
+        <br>
+        Texto Texto
+        <br>
+        Texto Texto
+        <br>  
+    </aside>
+    <footer>
+    @copyright 2016 supertienda chachi piruli
+    </footer>
+</div>
+</body>
+</html>

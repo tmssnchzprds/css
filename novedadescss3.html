@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Novedades CSS3</title>
+<style type="text/css">
+	#esquinas-redondeadas { background-color:#A1A1A1;
+	width:300px;
+	border:1px solid black;
+	/*border-radius:15px;*/
+	border-radius:15px 15px 0px 0px;
+	padding:10px 40px;}
+	#sombra {background-color:yellow;
+	width:300px;
+	height:300px;
+	box-shadow: 15px 15px 20px black;}
+	h2 {text-shadow: 5px 5px 5px blue;}
+	.parrafo {width:150px;
+	height:150px;
+	border:1px solid black;
+	word-wrap:break-word;
+	overflow:auto;}
+	#degradado {width:300px;
+	height:500px;
+	/*background:linear-gradient(to right,red,yellow);*//*background:linear-gradient(to right, red 10%,green 40%, blue 50%);*/
+	background:radial-gradient(red 10%,green 40%, blue 50%);}
+	@font-face {font-family:'MiNuevaFuente';
+	src:url('handsean.ttf');}
+	h1 { font-family:MiNuevaFuente;}
+	#noticias {border:1px solidblack;
+	width:800px;
+	margin: 10px auto;
+	column-count:2;colum-rule-style:dotted;
+	column-rule-width:2px;}
+	#transformar{ width:100px;
+	height:100px;
+	background-color:yellow;
+	transform:translate(400px, 0px) rotate(20deg);}
+	#transicion {width:100px;
+	height:100px;
+	background-color:red;
+	transition-property:width;
+	transition-duration:1s;}
+	#transicion:hover {width:600px;}
+	#animacion {position:absolute;
+	left:50px;
+	height:50px;
+	top:50px;
+	width:50px;
+	animation-name:MiAnimation;
+	animation-duration:3s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;}
+	@keyframes MiAnimation {
+		0% {left:50px;top:50px;}
+		25% {left:200px;top:50px;}
+		50% {left:200px;top:200px;}
+		75% {left:50px;top:200px;}
+		100% {left:50px;top:50px;}
+	}
+</style>
+</head>
+<body>
+1. Esquinas redondeadas:
+<br>
+<div id="esquinas-redondeadas">
+Esta capa va a tener las esquinas redondeadas</div>
+
+2. Sombras:
+<br>
+<div id="sombra">
+Esta capa va a tener una sombra</div>
+</body>
+<h2>Patatin patatan</h2>
+
+3. Rotura de frases:
+<br>
+<p class="parrafo">Esta frase es superlarga asdgsdfñglkjañlsdfjgñlskdglsñgkhañaksasgdsdfg<br>
+asfdga
+afsdgs<br>
+dgsdfg
+afgfsdg<br>
+dsfgas<br>
+ddddg
+aaaaaasdg<br>
+fadsffffffa </p>
+4 Degradados:
+<br>
+<div id="degradado"></div>
+5 Fuentes Propias:
+<h1> Esta fuente esta creada por mi</h1>
+6 Multiples columnas
+<div id="noticias">
+Lorem ipsum dolor sit amet, eu nonummy pede accumsan mauris, orci eget fringilla curabitur quis, dignissim in imperdiet, congue maecenas placerat et augue. Wisi dolor lorem in suspendisse, diam nam mus adipiscing sed tellus tortor, wisi porttitor sit quis. Arcu bibendum. Vitae amet nullam, nibh eget magna, et varius. Donec et ornare nulla phasellus, luctus mauris nunc nullam arcu nam felis, in pellentesque nullam quis auctor augue a. Suscipit nunc dui nisl vitae odio class. Magna pede sed magna ipsum. Est adipiscing sed porta nulla, felis cras quis, eget parturient magnis duis fringilla netus eleifend. Faucibus hac vel ac vel erat dictum, adipiscing elit pede ipsum fusce, neque proin sed rutrum proin elementum tempor, ac eu et elit turpis pellentesque sed.
+</div>
+7 Transformaciones.
+<div id="transformar">Este es el contenido de la capa transformar</div>
+8 Transiciones:<br>
+<div id="transicion">Esto se va a mover</div>
+9 Animaciones:
+<div id="animacion">
+<img src="w3css.gif" width="100" height="132">
+</div>
+</html>

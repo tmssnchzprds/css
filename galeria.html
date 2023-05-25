@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Galeria</title>
+<style type="text/css">
+	body {background-color:#959796;
+	background-image:url('wood-repeat.jpg');}
+	#galeria {width:700px;
+	margin:60px auto;}
+	#galeria figure {float:left;
+	background-color:#eee;
+	border:1px solid black;
+	box-shadow:0px 2px 15px #333;
+	margin:0px 10px 25px 0px;
+	padding:10px 10px 25px 10px;
+	opacity:0.9;
+}
+	#galeria figcaption {text-align:center;}
+	.foto1 {transform:rotate(-10deg);
+	z-index:6;}
+	.foto2 {transform:rotate(5deg);
+	z-index:5;}
+	.foto3 {transform:rotate(5deg);
+	z-index:4;}
+	.foto4 {transform:rotate(-10deg);
+	z-index:3;}
+	.foto5 {transform:rotate(8deg);
+	z-index:2;}
+	.foto6 {transform:rotate(-10deg);
+	z-index:1}
+	#galeria figure:hover {z-index:10;
+	background-color:#fff;
+	box-shadow:20px 10px 15px #000;
+	opacity:1;
+	transform:rotate(360deg);	transition-duration:2s;}
+</style>
+</head>
+
+<body>
+<div id="galeria">
+	<figure class="foto1">
+    <img src="1.jpg">
+    <figcaption> Es la foto 1 </figcaption>
+    </figure>
+	<figure class="foto2">
+    <img src="2.jpg">
+    <figcaption> Es la foto 2 </figcaption>
+    </figure>
+	<figure class="foto3">
+    <img src="3.jpg">
+    <figcaption> Es la foto 3 </figcaption>
+    </figure>
+	<figure class="foto4">
+    <img src="4.jpg">
+    <figcaption> Es la foto 4 </figcaption>
+    </figure>
+	<figure class="foto5">
+    <img src="5.jpg">
+    <figcaption> Es la foto 5 </figcaption>
+    </figure>
+	<figure class="foto6">
+    <img src="6.jpg">
+    <figcaption> Es la foto 6 </figcaption>
+    </figure>
+    </div>
+</body>
+</html>

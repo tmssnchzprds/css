@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Prueba Practica 1 parte 2</title>
+<style type="text/css">
+table {
+	border: 1px solid #007030;
+	}
+td:nth-child(1) {
+	background-color:#FFB482;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	color:#ffffff;
+	}
+.input {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-style:normal;
+	background-color:#FFFFFF;
+	color:#EF6201;
+	}
+</style>
+</head>
+
+<body>
+	<form>
+		<table>
+ 		   	<tr>
+        		<th colspan="2">Datos de la búsqueda de inmuebles
+    	        </th>
+ 	       </tr>
+        	<tr>
+    	    	<td>Provincia:
+	            </td>
+        	    <td>
+                	<select name="provincia" class="input">
+						<option value="Badajoz">Badajoz</option>
+    					<option value="Caceres">Caceres</option>
+    				</select>
+    	        </td>
+	        </tr>
+        	<tr>
+    	    	<td>Tipologia:
+	            </td>
+            	<td>
+                	<select name="tipologia" class="input">
+						<option value="Ático">Ático</option>
+    					<option value="Adosado">Adosado</option>
+                        <option value="Duplex">Duplex</option>
+    				</select>
+        	    </td>
+    	    </tr>
+	        <tr>
+        		<td>Habitaciones:
+    	        </td>
+	            <td>
+                	<input type="text" name="habitaciones" size="1" maxlength="1" class="input">
+            	</td>
+        	</tr>
+    	    <tr>
+	        	<td>Precio mínimo:
+            	</td>
+        	    <td>
+                	<input type="text" name="preciominimo" size="10" maxlength="10" class="input">
+    	        </td>
+ 	       </tr>
+        	<tr>
+    	    	<td>Precio máximo:
+	            </td>
+        	    <td>
+                	<input type="text" name="preciomaximo" size="10" maxlength="10" class="input">
+    	        </td>
+	        </tr>
+		</table>
+    </form>
+</body>
+</html>

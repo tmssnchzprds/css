@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pagina basica CSS,bordes</title>
+<style type="text/css">
+p { border-style:solid;
+border-width:1px;
+border-color:red;
+border:1px solid red; }
+#capa {width:400px;
+border:1px solid blue;
+}
+table {width:500px;
+border-collapse:collapse;
+border:1px solid red;}
+/*table tr,td {border:1px solid red;}*/
+/*table tr th {background-color:green;}*/
+th,td {border-bottom: 1px solid black
+;}
+td {padding:4px 10px;
+font-size:14px;
+color:gray;
+width:100px;
+text-align:center;
+margin:0px auto;}
+td:hover {background-color:gray;}
+/*Pseudoclases*/
+	/*tr:fird-child {background-color:yellow;}
+	tr:last-child {background-color:yellow;}
+	tr:nth-child(3) {background-color:cyan;}*/
+tr:nth-child(even/*odd*/) {background-color:lightgray;}
+
+</style>
+</head>
+
+<body>
+<div id="capa">
+<p> Parrafo de prueba </p>
+</div>
+Maquetando tablas con CSS:
+
+<table id="articulos">
+	<tr>
+    	<th>Nombre</th>
+    	<th>Precio</th>
+    	<th>Oferta</th>
+	</tr>
+	<tr>
+    	<td><a href="detalle_articulo.html">Jamon</a></td>
+    	<td>15€</td>
+    	<td>dos por uno</td>
+	</tr>
+   	<tr>
+    	<td><a href="detalle_articulo.html">Queso</a></td>
+    	<td>12€</td>
+    	<td>dos por uno</td>
+	</tr>
+	<tr>
+    	<td><a href="detalle_articulo.html">Lomo</a></td>
+    	<td>7€</td>
+    	<td>dos por uno</td>
+	</tr>
+	<tr>
+    	<td><a href="detalle_articulo.html">Pan</a></td>
+    	<td>1€</td>
+    	<td>dos por uno</td>
+	</tr>
+	<tr>
+    	<td><a href="detalle_articulo.html">Yogurt</a></td>
+    	<td>0,5€</td>
+    	<td>dos por uno</td>
+	</tr>
+</table>
+
+</body>
+</html>
